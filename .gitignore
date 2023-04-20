@@ -1,7 +1,26 @@
 # Compiled class file
 *.class
 
+# gradle
+.gradle
+/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# maven
+/target/
+
+# STS
+.settings/
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+bin/
+
 # Log file
+/logs/
 *.log
 
 # BlueJ files
@@ -11,9 +30,16 @@
 .mtj.tmp/
 
 # idea file
-.idea/*
 *.iml
-**/target/**
+*.ipr
+*.iws
+.idea
+out
+test-output
+atlassian-ide-plugin.xml
+
+# VS Code
+.vscode/
 
 # Package Files #
 *.jar
