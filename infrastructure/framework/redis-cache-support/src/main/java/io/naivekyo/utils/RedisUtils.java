@@ -15,7 +15,6 @@ import org.springframework.data.redis.core.RedisConnectionUtils;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.ScanOptions;
 
-import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -81,7 +80,7 @@ public final class RedisUtils {
                 Set<T> set = new HashSet<>();
                 while (scan.hasNext()) {
                     set.add((T) scan.next());
-                };
+                }
                 scan.close();
                 return set;
             }
