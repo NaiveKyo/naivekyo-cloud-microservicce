@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>business-entity</module>
+        <module>business-admin</module>
     </modules>
 
     <properties>

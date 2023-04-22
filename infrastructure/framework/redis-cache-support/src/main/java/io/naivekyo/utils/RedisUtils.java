@@ -67,8 +67,8 @@ public final class RedisUtils {
 
     /**
      * Redis scan command
-     * @param pattern
-     * @param count
+     * @param pattern the filter.
+     * @param count number of elements to scan
      * @param <T>
      * @return
      */
@@ -88,13 +88,13 @@ public final class RedisUtils {
     }
 
     /**
-     * Redis bulking scan command, require underlying connection implementation is Lettuce. <br/>
-     * TODO: 考虑泛型处理
-     * @param pattern
+     * Incrementally iterate the keys space. require underlying connection implementation is Lettuce. <br/>
+     * TODO: use generic parameter
+     * @param pattern the filter.
      * @param <T>
      * @return
      */
-    public static <T> Set<T> wholeScan(String pattern) {
+    public static <T> Set<T> bulkScan(String pattern) {
         RedisConnectionFactory factory = redisTemplate.getConnectionFactory();
         if (factory == null)
             return null;
@@ -127,7 +127,7 @@ public final class RedisUtils {
         return keySet;
     }
 
-    // Redis bulking scan command, require underlying connection implementation is Redisson. 
+    // Incrementally iterate the keys space. require underlying connection implementation is Redisson. 
 //	 public Set<String> bulkScan(String pattern) {
 //	 	RedisConnectionFactory factory = this.redisTemplate.getConnectionFactory();
 //	 	if (factory == null)

@@ -19,7 +19,7 @@ import org.slf4j.LoggerFactory;
  * @author NaiveKyo
  * @since 1.0
  */
-public final class SnowflakeGenerator {
+public class SnowflakeGenerator {
     
     private static final Logger log = LoggerFactory.getLogger(SnowflakeGenerator.class);
     
@@ -66,7 +66,7 @@ public final class SnowflakeGenerator {
         return snowflakeGenerator.nextIdLowQPS();
     }
     
-    static class SnowflakeAlgoImpl {
+    public static class SnowflakeAlgoImpl {
         
         // begin time(UTC): 2020-01-01T00:00:00+08:00
         static final long START_STAMP = 1577836800000L;

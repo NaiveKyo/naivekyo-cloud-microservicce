@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>business-service</artifactId>
+        <groupId>io.naivekyo</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>business-admin</artifactId>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+    
+    <dependencies>
+
+        <!-- naivekyo-cloud-framework core component -->
+        <dependency>
+            <groupId>io.naivekyo</groupId>
+            <artifactId>core</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <!-- multi-module sharing entity -->
+        <dependency>
+            <groupId>io.naivekyo</groupId>
+            <artifactId>business-entity</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <!-- production environment enhancement support -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+
+        <!-- spring boot test tools -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+        </dependency>
+        
+        <!-- enhanced spring-mvc configuration -->
+        <dependency>
+            <groupId>io.naivekyo</groupId>
+            <artifactId>spring-mvc</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <!-- enhanced json serialization configuration  -->
+        <dependency>
+            <groupId>io.naivekyo</groupId>
+            <artifactId>jackson-support</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        
+    </dependencies>
+
+</project>
