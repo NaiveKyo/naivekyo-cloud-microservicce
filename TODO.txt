@@ -1,0 +1,6 @@
+1. Global exception handle.
+  - JSR 303 validation. see https://naivekyo.github.io/2022/02/25/jup-jmm-wu-final-memory-semantics-and-happens-before
+  - Spring Security exception capture. see https://naivekyo.github.io/2022/01/10/spring-security-of-exception-system/
+  - Project customize exception.
+
+2. TODO
